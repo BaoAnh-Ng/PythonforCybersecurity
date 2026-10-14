@@ -1,5 +1,10 @@
-number = int(input("Enter a number: "))
-if number % 2 == 0:
-    print(f"{number} is even")
+def divisible(number, divisor):
+    return number % divisor == 0
+
+num = int(input("Enter a number: "))
+div = int(input("Enter a divisor: "))
+
+if  divisible(num, div):
+    print(f"{num} is divisible by {div}.")
 else:
-    print(f"{number} is NOT even")
+    print(f"{num} is NOT divisible by {div}.")
